@@ -11,10 +11,10 @@ int main() {
     	scanf("%s", str);
     	scanf("%d", &v);
     	for (j=0; str[j]; j++)
-    		if ((str[j]-v)<65)
+    		if ((str[j]-v)<65) //verifica se a letra em questao é menor que o 'A'
     		{
-			k=65-str[j];
-			str[j]=91-(k+v);
+			k=65-str[j]; //guarda quantas casas vai voltar
+			str[j]=91-(k+v); //conta essas casas a partir do 'Z'
 			}
 			else
 			str[j]-=v;
